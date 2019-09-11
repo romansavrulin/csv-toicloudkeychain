@@ -49,6 +49,7 @@ repeat with i from 1 to length of recs
 					set value of text field 2 of it to kcUsername
 					keystroke tab
 					set value of text field 3 of it to kcPassword
+					delay 2
 					keystroke return
 				end tell
 				

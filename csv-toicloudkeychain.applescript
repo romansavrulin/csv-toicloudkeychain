@@ -11,9 +11,7 @@ set recs to paragraphs of f
 tell application "System Events"
 	tell application process "Safari"
 		set frontmost to true
-		delay 3
 		keystroke "," using command down
-		delay 3
 		tell window 1
 			click button "Пароли" of toolbar 1 of it
 			repeat until (exists button "Добавить" of group 1 of group 1 of it)
@@ -49,7 +47,6 @@ repeat with i from 1 to length of recs
 					set value of text field 2 of it to kcUsername
 					keystroke tab
 					set value of text field 3 of it to kcPassword
-					delay 2
 					keystroke return
 				end tell
 				
